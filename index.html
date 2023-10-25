@@ -4,100 +4,79 @@
     <link rel="icon" href="favicon.ico" />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Nery</title>
+    <link rel="stylesheet" href="./styles.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+    <title>My Portfolio</title>
   </head>
   <body>
     <header>
-      <h1>Hello, my name is Maria Albertina I'm a full stack developer</h1>
-      <a href="" target="_blank"></a>
-      <a href="#contact">Find out more</a>
+      <nav id="desktop-nav">
+        <div class="logo">Rui Nery</div>
+        <div>
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contacts">Contacts</a></li>
+          </ul>
+        </div>
+      </nav>
+      <nav>
+        <nav id="hamburger-nav">
+          <div class="logo">Nery</div>
+          <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+            <div class="menu-links">
+              <li><a href="#about" onclick="toggleMenu()">About</a></li>
+              <li>
+                <a href="#experience" onclick="toggleMenu()">Experience</a>
+              </li>
+              <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+              <li><a href="#contacts" onclick="toggleMenu()">Contacts</a></li>
+            </div>
+          </div>
+        </nav>
+      </nav>
     </header>
-    <main>
-      <section id="about" class="about"></section>
-      <h2>About me</h2>
-      <div>
-        <img
-          src="./assets/img2.webp"
-          alt="about me"
-          style="width: 400px; height: 400px"
-        />
-        <p>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iusto ipsam
-          quia praesentium ab nesciunt, doloremque eos aspernatur consectetur
-          vero eius suscipit velit tempora magnam vitae! Distinctio sequi eaque
-          voluptatum modi?
-        </p>
-        <a href="">View resume</a>
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="./assets/Ppic.png" alt="ProfilePic" class="profile_pic" />
       </div>
-      <blockquote>Don't comment bad code - rewrite it</blockquote>
-      <cite>Brian Kernighan</cite>
-      <section id="projects" class="projects">
-        <h2>Projects</h2>
-        <article>
-          <h3>Project 1</h3>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque sequi
-            eos dicta labore, modi mollitia architecto similique quibusdam
-            excepturi sint iure voluptatum ab totam? Quam sapiente harum beatae
-            maiores voluptas!
-          </p>
-          <a href="">Source code</a>
-          <a href="">View project</a>
-          <img src="./assets/img1.png" alt="" />
-        </article>
-        <article>
-          <h3>Project 2</h3>
-
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque sequi
-            eos dicta labore, modi mollitia architecto similique quibusdam
-            excepturi sint iure voluptatum ab totam? Quam sapiente harum beatae
-            maiores voluptas!
-          </p>
-          <a href="">Source code</a>
-          <a href="">View project</a>
-          <img src="./assets/img1.png" alt="" />
-        </article>
-        <article>
-          <h3>Project 3</h3>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque sequi
-            eos dicta labore, modi mollitia architecto similique quibusdam
-            excepturi sint iure voluptatum ab totam? Quam sapiente harum beatae
-            maiores voluptas!
-          </p>
-          <a href="">Source code</a>
-          <a href="">View project</a>
-          <img src="./assets/img1.png" alt="" />
-        </article>
-      </section>
-      <section id="contact">
-        <h2>Contact</h2>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam
-          quisquam animi dolorum velit hic mollitia tempore, facere assumenda
-          nihil commodi iusto optio deleniti ea unde, adipisci ullam. In, fugit
-          aperiam!
-        </p>
-        <a href="mailto:sendtoMe@send.pt">Let's talk</a>
-      </section>
-    </main>
-    <footer>
-      <ul>
-        <li>
-          <a href="">Linkedin</a>
-        </li>
-        <li>
-          <a href="">Github</a>
-        </li>
-        <li>
-          <a href="">Twitter</a>
-        </li>
-        <li>
-          <a href="">Instagram</a>
-        </li>
-      </ul>
-      <p>@2023 Developed by Maria Albertina</p>
-    </footer>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Nery</h1>
+        <p class="section__text__p2">Full Stack Developer</p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/resume-example.pdf')"
+          >
+            Download CV
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            Contact Info
+          </button>
+        </div>
+        <div id="socials-container">
+          <img
+            src="./assets/LinkedIn.png"
+            alt="My LinkedIn profile"
+            class="icon"
+            onclick="location.href='https://www.linkedin.com/in/rui-nery-72a759125'"
+          />
+          <img
+            src="./assets/github_icon.png"
+            alt="My Github profile"
+            class="icon"
+            onclick="location.href='https://https://github.com/Nery-25/'"
+          />
+        </div>
+      </div>
+    </section>
+    <script src="script.js"></script>
   </body>
 </html>
