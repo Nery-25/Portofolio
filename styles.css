@@ -244,6 +244,8 @@ section {
 .btn-color-2:hover {
   background: rgb(53, 53, 53);
   color: white;
+  transform: scale(1.1);
+  transition: all 0.3s ease-in-out;
 }
 
 .btn-color-2 {
@@ -260,4 +262,9 @@ section {
 
 .btn-container {
   gap: 1rem;
+}
+
+.footer {
+  text-align: center;
+  padding-bottom: 3px;
 }
