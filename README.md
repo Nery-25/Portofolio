@@ -1,4 +1,4 @@
 # portfolio
 
-Here you'll find my portfólio with some of my projects with my resume attached.
+Here you'll find my portfolio with some of my projects with my resume attached.
 Still updating it with more complex projects!
